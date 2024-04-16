@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD HOUSE</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo"><span>FOOD</span> HOUSE</a>
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="menu.html" style="color:rgb(255,115,0);">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="career.html">Careers</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+        <div class="user">
+            <button class="signin"><i class="fa-regular fa-user"></i> Sign in</button>
+            <button class="signup">Sign Up</button>
+        </div>
+    </nav>
+
+
+    <div class="main">
+
+        <h1>ALL CATEGORY</h1>
+        <div class="category">
+            <div class="pizza">
+                <a class="categories" href="#secton1"><img src="https://images.freeimages.com/images/premium/previews/3527/35272092-whole-pizza-on-the-wooden-table.jpg" alt=""></a>
+                <p>Pizza</p>
+            </div>
+            <div class="burger">
+                <a class="categories" href="#section1"><img src="https://images.immediate.co.uk/production/volatile/sites/2/2020/04/Cheeseburger-74e8cde.jpg?quality=90&resize=556,505" alt=""></a>
+                <p>Burger</p>
+            </div>
+            <div class="shawarma">
+                <a class="categories" href="#section1"><img src="https://www.themediterraneandish.com/wp-content/uploads/2023/02/Cauliflower-Shawarma_8-500x500.jpg" alt=""></a>
+                <p>Shawarma</p>
+            </div>
+            <div class="chowmein">
+                <a class="categories" href="#section2"><img src="https://images.slurrp.com/prod/recipe_images/transcribe/main%20course/Chow_Mein.webp" alt=""></a>
+                <p>Chowmein</p>
+            </div>
+            <div class="ramen">
+                <a class="categories" href="#section2"><img src="https://minimalistbaker.com/wp-content/uploads/2015/08/Vegan-Ramen-Square.jpg" alt=""></a>
+                <p>Ramen</p>
+            </div>
+            <div class="pasta">
+                <a class="categories" href="#section2"><img src="https://assets.bonappetit.com/photos/5e6bb3ba9b123d000836fd04/1:1/w_2560%2Cc_limit/0420-Pasta-Bucatini-with-Fava-Beans.jpg" alt=""></a>
+                <p>Pasta</p>
+            </div>
+            <div class="drinks">
+                <a class="categories" href="#section3"><img src="https://www.tasteofhome.com/wp-content/uploads/2019/04/Tequila-Sunrise-shutterstock_431091331.jpg?fit=696%2C696" alt=""></a>
+                <p>Drinks</p>
+            </div>
+
+        </div>
+
+
+        <h1 class="item-heading">ALL ITEMS</h1>
+        <div class="items">
+            <h2 id="section1">Fast Foods</h2>
+            <div id="category1">
+                <div class="box">
+                    <img onclick="window.location = ('product-details1.html')" src="https://t3.ftcdn.net/jpg/00/27/57/96/360_F_27579652_tM7V4fZBBw8RLmZo0Bi8WhtO2EosTRFD.jpg" alt="" class="img">
+                    <div class="text">
+                        <div class="details">
+                            <h3>Food Name Here</h3>
+                            <p>Food details here</p>
+                            <button class="buy" onclick="payment()">$10 / Buy Now</button>
+                        </div>
+                        <div class="buttons">
+                            <button class="fav" onclick="color1()"><i class="fa-solid fa-heart one"></i></button>
+                            <button class="cart" ><i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <img onclick="window.location = ('product-details2.html')" src="https://saraylidoner.com/wp-content/uploads/2021/09/cheese-burger.jpg" alt="" class="img">
+                    <div class="text">
+                        <div class="details">
+                            <h3>Food Name Here</h3>
+                            <p>Food details here</p>
+                            <button class="buy" onclick="payment()">$10 / Buy Now</button>
+                        </div>
+                        <div class="buttons">
+                            <button class="fav" onclick="color2()"><i class="fa-solid fa-heart two"></i></button>
+                            <button class="cart" ><i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <img onclick="window.location = ('product-details3.html')" src="https://www.thedailymeal.com/img/gallery/the-onion-hack-thats-perfect-for-making-shawarma-at-home/intro-1692883768.jpg" alt="" class="img">
+                    <div class="text">
+                        <div class="details">
+                            <h3>Food Name Here</h3>
+                            <p>Food details here</p>
+                            <button class="buy" onclick="payment()">$10 / Buy Now</button>
+                        </div>
+                        <div class="buttons">
+                            <button class="fav" onclick="color3()"><i class="fa-solid fa-heart three"></i></button>
+                            <button class="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 id="section2">Noodles</h2>
+            <div id="category2">
+                <div class="box">
+                    <img onclick="window.location = ('product-details4.html')" src="https://www.foodandwine.com/thmb/KXJgXSgNZ1tUKFxZJ1bYXP7D668=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/pasta-aglio-e-olio-FT-RECIPE0324-e53bdb7ca42d4377ab4f014a2b58ff4e.jpg" alt="" class="img">
+                    <div class="text">
+                        <div class="details">
+                            <h3>Food Name Here</h3>
+                            <p>Food details here</p>
+                            <button class="buy" onclick="payment()">$10 / Buy Now</button>
+                        </div>
+                        <div class="buttons">
+                            <button class="fav" onclick="color4()"><i class="fa-solid fa-heart four"></i></button>
+                            <button class="cart" ><i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <img onclick="window.location = ('product-details5.html')" src="https://cdn.britannica.com/77/234877-050-01EC3819/Tonkotsu-ramen.jpg" alt="" class="img">
+                    <div class="text">
+                        <div class="details">
+                            <h3>Food Name Here</h3>
+                            <p>Food details here</p>
+                            <button class="buy" onclick="payment()">$10 / Buy Now</button>
+                        </div>
+                        <div class="buttons">
+                            <button class="fav" onclick="color5()"><i class="fa-solid fa-heart five"></i></button>
+                            <button class="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <img onclick="window.location = ('product-details6.html')" src="https://www.goodnes.com/sites/g/files/jgfbjl321/files/srh_recipes/f09a1c6421c8857f47b8b2816a8a7d35.jpg" alt="" class="img">
+                    <div class="text">
+                        <div class="details">
+                            <h3>Food Name Here</h3>
+                            <p>Food details here</p>
+                            <button class="buy" onclick="payment()">$10 / Buy Now</button>
+                        </div>
+                        <div class="buttons">
+                            <button class="fav" onclick="color6()"><i class="fa-solid fa-heart six"></i></button>
+                            <button class="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <h2 id="section3">Drinks</h2>
+            <div id="category3">
+                <div class="box">
+                    <img onclick="window.location = ('product-details7.html')" src="https://cdn-allef.nitrocdn.com/srVCBWNuegbwocAiOJUUWBFJUXMzFNKm/assets/images/optimized/rev-7200cec/www.tea-and-coffee.com/wp/wp-content/uploads/2020/06/Benefits-of-Black-Tea-.jpg" alt="" class="img">
+                    <div class="text">
+                        <div class="details">
+                            <h3>Food Name Here</h3>
+                            <p>Food details here</p>
+                            <button class="buy" onclick="payment()">$10 / Buy Now</button>
+                        </div>
+                        <div class="buttons">
+                            <button class="fav" onclick="color7()"><i class="fa-solid fa-heart seven"></i></button>
+                            <button class="cart" ><i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <img onclick="window.location = ('product-details8.html')" src="https://neurosciencenews.com/files/2023/06/coffee-brain-caffeine-neuroscincces.jpg" alt="" class="img">
+                    <div class="text">
+                        <div class="details">
+                            <h3>Food Name Here</h3>
+                            <p>Food details here</p>
+                            <button class="buy" onclick="payment()">$10 / Buy Now</button>
+                        </div>
+                        <div class="buttons">
+                            <button class="fav" onclick="color8()"><i class="fa-solid fa-heart eight"></i></button>
+                            <button class="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <img onclick="window.location = ('product-details9.html')" src="https://www.thespruceeats.com/thmb/EDz2Mz87ODSi01sKZCi991qmMSY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/virgin-miami-vice-cocktail-recipe-760381-hero-01-c32465553bb14945bbea4cf4f6060364.jpg" alt="" class="img">
+                    <div class="text">
+                        <div class="details">
+                            <h3>Food Name Here</h3>
+                            <p>Food details here</p>
+                            <button class="buy" onclick="payment()">$10 / Buy Now</button>
+                        </div>
+                        <div class="buttons">
+                            <button class="fav" onclick="color9()"><i class="fa-solid fa-heart nine"></i></button>
+                            <button class="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+
+
+    <footer>
+        
+        <div class="about">
+            <h1><span>FOOD</span> HOUSE</h1>
+            <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+        </div>
+        <div class="product">
+            <h3>Product</h3>
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="">Reviews</a></li>
+            </ul>
+        </div>
+        <div class="company">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="">About Us</a></li>
+                <li><a href="career.html">Careers</a></li>
+            </ul>
+        </div>
+        <div class="support">
+            <h3>Support</h3>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="s-media">
+            <h3>Reach Us</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/mursalin2250"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/mursalin2250"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.twitter.com/mursalin2250"><i class="fa-brands fa-x-twitter"></i></a></li>
+            </ul>
+        </div>
+        
+    </footer>
+    <div class="copyright">
+        <h3>Created By <a href="https://mursalin2250.github.io/portfolio">mursalin2250</a></h3>
+    </div>
+
+
+    <script>
+        function color1(){
+            document.querySelector(".one").classList.toggle("color");
+        }
+        function color2(){
+            document.querySelector(".two").classList.toggle("color");
+        }
+        function color3(){
+            document.querySelector(".three").classList.toggle("color");
+        }
+        function color4(){
+            document.querySelector(".four").classList.toggle("color");
+        }
+        function color5(){
+            document.querySelector(".five").classList.toggle("color");
+        }
+        function color6(){
+            document.querySelector(".six").classList.toggle("color");
+        }
+        
+        function color7(){
+            document.querySelector(".seven").classList.toggle("color");
+        }
+        function color8(){
+            document.querySelector(".eight").classList.toggle("color");
+        }
+        function color9(){
+            document.querySelector(".nine").classList.toggle("color");
+        }
+        
+
+    </script>
+</body>
+</html>
+

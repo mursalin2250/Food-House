@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD HOUSE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo"><span>FOOD</span> HOUSE</a>
+        <ul>
+            <li><a href="index.html" style="color:rgb(255,115,0);">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="career.html">Careers</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+        <div class="user">
+            <button class="signin"><i class="fa-regular fa-user"></i> Sign in</button>
+            <button class="signup">Sign Up</button>
+        </div>
+    </nav>
+    <div class="main">
+        <header>
+            <h1>Enjoy Your Favourite <br> Food With Family</h1>
+            <div class="btn">
+                <button class="btn1" onclick="category()">CATEGORY</button>
+                <button class="btn2" onclick="review()">REVIEWS</button>
+            </div>
+        </header>
+        <div class="info">
+            <div class="pictures">
+                <img src="https://handletheheat.com/wp-content/uploads/2019/02/The-Best-Pancake-Recipe-SQUARE.jpg" alt="">
+                <img src="https://www.creativefabrica.com/wp-content/uploads/2022/02/28/Original-rubber-seal-stamp-design-vector-Graphics-26165121-2-580x387.png" alt="">
+                <img src="https://c4.wallpaperflare.com/wallpaper/984/944/941/burger-french-fries-hamburger-wallpaper-preview.jpg" alt="">
+            </div>
+            <div class="authenticity">
+                <h1>Where Quality <span>Food Meet</span> <br>Excellent Service</h1>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br><br><br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <button class="btn3">READ MORE</button>
+            </div>
+        </div>
+
+        <div class="food">
+            <div class="all-category">
+                <h1 id="category-heading">CATEGORY</h1>
+                <a href="menu.html">See All Category</a>
+            </div>
+            <div class="category">
+                <div class="pizza">
+                    <a class="categories" href="#secton1"><img src="https://images.freeimages.com/images/premium/previews/3527/35272092-whole-pizza-on-the-wooden-table.jpg" alt=""></a>
+                    <p>Pizza</p>
+                </div>
+                <div class="burger">
+                    <a class="categories" href="#section1"><img src="https://images.immediate.co.uk/production/volatile/sites/2/2020/04/Cheeseburger-74e8cde.jpg?quality=90&resize=556,505" alt=""></a>
+                    <p>Burger</p>
+                </div>
+                <div class="shawarma">
+                    <a class="categories" href="#section1"><img src="https://www.themediterraneandish.com/wp-content/uploads/2023/02/Cauliflower-Shawarma_8-500x500.jpg" alt=""></a>
+                    <p>Shawarma</p>
+                </div>
+                <div class="chowmein">
+                    <a class="categories" href="#section2"><img src="https://images.slurrp.com/prod/recipe_images/transcribe/main%20course/Chow_Mein.webp" alt=""></a>
+                    <p>Chowmein</p>
+                </div>
+                <div class="ramen">
+                    <a class="categories" href="#section2"><img src="https://minimalistbaker.com/wp-content/uploads/2015/08/Vegan-Ramen-Square.jpg" alt=""></a>
+                    <p>Ramen</p>
+                </div>
+                <div class="pasta">
+                    <a class="categories" href="#section2"><img src="https://assets.bonappetit.com/photos/5e6bb3ba9b123d000836fd04/1:1/w_2560%2Cc_limit/0420-Pasta-Bucatini-with-Fava-Beans.jpg" alt=""></a>
+                    <p>Pasta</p>
+                </div>
+                <div class="drinks">
+                    <a class="categories" href="#section3"><img src="https://www.tasteofhome.com/wp-content/uploads/2019/04/Tequila-Sunrise-shutterstock_431091331.jpg?fit=696%2C696" alt=""></a>
+                    <p>Drinks</p>
+                </div>
+    
+            </div>
+    
+    
+            <div class="all-items">
+                <h1 class="item-heading">TOP ITEMS</h1>
+                <a href="menu.html">See All Items</a>
+            </div>
+            <div class="items">
+                <div id="category">
+                    <div class="box">
+                        <img onclick="window.location = ('product-details1.html')" src="https://t3.ftcdn.net/jpg/00/27/57/96/360_F_27579652_tM7V4fZBBw8RLmZo0Bi8WhtO2EosTRFD.jpg" alt="" class="img">
+                        <div class="text">
+                            <div class="details">
+                                <h3>Food Name Here</h3>
+                                <p>Food details here</p>
+                                <button class="buy" onclick="payment()">$10 / Buy Now</button>
+                            </div>
+                            <div class="buttons">
+                                <button class="fav" onclick="color1()"><i class="fa-solid fa-heart one"></i></button>
+                                <button class="cart" ><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="box">
+                        <img onclick="window.location = ('product-details2.html')" src="https://saraylidoner.com/wp-content/uploads/2021/09/cheese-burger.jpg" alt="" class="img">
+                        <div class="text">
+                            <div class="details">
+                                <h3>Food Name Here</h3>
+                                <p>Food details here</p>
+                                <button class="buy" onclick="payment()">$10 / Buy Now</button>
+                            </div>
+                            <div class="buttons">
+                                <button class="fav" onclick="color2()"><i class="fa-solid fa-heart two"></i></button>
+                                <button class="cart" ><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="box">
+                        <img onclick="window.location = ('product-details4.html')" src="https://www.foodandwine.com/thmb/KXJgXSgNZ1tUKFxZJ1bYXP7D668=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/pasta-aglio-e-olio-FT-RECIPE0324-e53bdb7ca42d4377ab4f014a2b58ff4e.jpg" alt="" class="img">
+                        <div class="text">
+                            <div class="details">
+                                <h3>Food Name Here</h3>
+                                <p>Food details here</p>
+                                <button class="buy" onclick="payment()">$10 / Buy Now</button>
+                            </div>
+                            <div class="buttons">
+                                <button class="fav" onclick="color3()"><i class="fa-solid fa-heart three"></i></button>
+                                <button class="cart" ><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="box">
+                        <img onclick="window.location = ('product-details5.html')" src="https://cdn.britannica.com/77/234877-050-01EC3819/Tonkotsu-ramen.jpg" alt="" class="img">
+                        <div class="text">
+                            <div class="details">
+                                <h3>Food Name Here</h3>
+                                <p>Food details here</p>
+                                <button class="buy" onclick="payment()">$10 / Buy Now</button>
+                            </div>
+                            <div class="buttons">
+                                <button class="fav" onclick="color4()"><i class="fa-solid fa-heart four"></i></button>
+                                <button class="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+               
+                
+                    <div class="box">
+                        <img onclick="window.location = ('product-details8.html')" src="https://neurosciencenews.com/files/2023/06/coffee-brain-caffeine-neuroscincces.jpg" alt="" class="img">
+                        <div class="text">
+                            <div class="details">
+                                <h3>Food Name Here</h3>
+                                <p>Food details here</p>
+                                <button class="buy" onclick="payment()">$10 / Buy Now</button>
+                            </div>
+                            <div class="buttons">
+                                <button class="fav" onclick="color5()"><i class="fa-solid fa-heart five"></i></button>
+                                <button class="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="box">
+                        <img onclick="window.location = ('product-details9.html')" src="https://www.thespruceeats.com/thmb/EDz2Mz87ODSi01sKZCi991qmMSY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/virgin-miami-vice-cocktail-recipe-760381-hero-01-c32465553bb14945bbea4cf4f6060364.jpg" alt="" class="img">
+                        <div class="text">
+                            <div class="details">
+                                <h3>Food Name Here</h3>
+                                <p>Food details here</p>
+                                <button class="buy" onclick="payment()">$10 / Buy Now</button>
+                            </div>
+                            <div class="buttons">
+                                <button class="fav" onclick="color6()"><i class="fa-solid fa-heart six"></i></button>
+                                <button class="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cities">
+            <h1>Find us in these <span>cities and</span> <br> many more!</h1>
+            <div class="locations">
+                <div class="place">
+                    <img src="https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2022/01/28/sylhet_talha-chowdhury.jpg" alt="" class="img">
+                    <div class="place-name">
+                        <h3>Sylhet</h3>
+                        <div class="round"><i class="fa-solid fa-arrow-up"></i></div>
+                    </div>
+                </div>
+                <div class="place">
+                    <img src="https://media.istockphoto.com/id/1210768445/photo/skyscraper-in-dhaka-metropolitan-area.jpg?s=612x612&w=0&k=20&c=qGFV2qpVXkUNtm8KYT2avrSZwcBcoeM9wIp4LdADgrI=" alt="" class="img">
+                    <div class="place-name">
+                        <h3>Dhaka</h3>
+                        <div class="round"><i class="fa-solid fa-arrow-up"></i></div>
+                    </div>
+                </div>
+                <div class="place">
+                    <img src="https://www.tbsnews.net/sites/default/files/styles/big_3/public/images/2022/01/28/khulna_md-repon-bhuiyan.jpg" alt="" class="img">
+                    <div class="place-name">
+                        <h3>Khulna</h3>
+                        <div class="round"><i class="fa-solid fa-arrow-up"></i></div>
+                    </div>
+                </div>
+                <div class="place">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/d4/8f/11/tajhat-palace-front-right.jpg?w=400&h=300&s=1" alt="" class="img">
+                    <div class="place-name">
+                        <h3>Rangpur</h3>
+                        <div class="round"><i class="fa-solid fa-arrow-up"></i></div>
+                    </div>
+                </div>
+                <div class="place">
+                    <img src="https://facts.net/wp-content/uploads/2023/07/34-facts-about-chittagong-1688197869.jpg" alt="" class="img">
+                    <div class="place-name">
+                        <h3>Chittagong</h3>
+                        <button class="round"><i class="fa-solid fa-arrow-up"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 style="margin: 50px; font-size: 35px;">Our Top Reviews</h1>
+        <div id="review">
+            <div class="card">
+                <div class="upper">
+                    <div class="client-name">
+                        <div class="circle"><i class="fa-solid fa-user"></i></div>
+                        <div>
+                            <p>Name Here</p>
+                            <p>16-4-2024</p>
+                        </div>
+                    </div>
+                    <p style="letter-spacing: 3px; color: gold;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+            </div>
+            <div class="card">
+                <div class="upper">
+                    <div class="client-name">
+                        <div class="circle"><i class="fa-solid fa-user"></i></div>
+                        <div>
+                            <p>Name Here</p>
+                            <p>16-4-2024</p>
+                        </div>
+                    </div>
+                    <p style="letter-spacing: 3px; color: gold;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+            </div>
+            <div class="card">
+                <div class="upper">
+                    <div class="client-name">
+                        <div class="circle"><i class="fa-solid fa-user"></i></div>
+                        <div>
+                            <p>Name Here</p>
+                            <p>16-4-2024</p>
+                        </div>
+                    </div>
+                    <p style="letter-spacing: 3px; color: gold;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+            </div>
+            <div class="card">
+                <div class="upper">
+                    <div class="client-name">
+                        <div class="circle"><i class="fa-solid fa-user"></i></div>
+                        <div>
+                            <p>Name Here</p>
+                            <p>16-4-2024</p>
+                        </div>
+                    </div>
+                    <p style="letter-spacing: 3px; color: gold;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="about">
+            <h1><span>FOOD</span> HOUSE</h1>
+            <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+        </div>
+        <div class="product">
+            <h3>Product</h3>
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="">Reviews</a></li>
+            </ul>
+        </div>
+        <div class="company">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="">About Us</a></li>
+                <li><a href="career.html">Careers</a></li>
+            </ul>
+        </div>
+        <div class="support">
+            <h3>Support</h3>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="s-media">
+            <h3>Reach Us</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/mursalin2250"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/mursalin2250"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.twitter.com/mursalin2250"><i class="fa-brands fa-x-twitter"></i></a></li>
+            </ul>
+        </div>
+        
+    </footer>
+    <div class="copyright">
+        <h3>Created By <a href="https://mursalin2250.github.io/portfolio">mursalin2250</a></h3>
+    </div>
+
+    <script>
+        function category(){
+            window.location = "#category-heading";
+        }
+        function review(){
+            window.location = "#review";
+        }
+        function payment(){
+            window.location = "payment.html";
+        }
+        function color1(){
+            document.querySelector(".one").classList.toggle('color');
+        }
+        function color2(){
+            document.querySelector(".two").classList.toggle('color');
+        }
+        function color3(){
+            document.querySelector(".three").classList.toggle('color');
+        }
+        function color4(){
+            document.querySelector(".four").classList.toggle('color');
+        }
+        function color5(){
+            document.querySelector(".five").classList.toggle('color');
+        }
+        function color6(){
+            document.querySelector(".six").classList.toggle('color');
+        }
+
+    </script>
+</body>
+</html>
+
