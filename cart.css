@@ -1,0 +1,296 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    cursor:pointer;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    position: fixed;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a{
+    color: white;
+    transition:color .5s;
+}
+nav ul li a:hover{
+    color: rgb(255, 115, 0);
+    
+}
+.logo{
+    font-size: x-large;
+    color: white;
+    letter-spacing:2px;
+    font-weight: 600;
+}
+.logo span{
+    color: rgb(255, 115, 0);
+}
+.user{
+    display: flex;
+    gap: 20px;
+}
+.user button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 17px;
+    border-radius: 20px;
+}
+.user .signup{
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    transition:color .5s;
+    transition:background-color .5s;
+}
+.user .signup:hover{
+    border: 1px solid white;
+    background: none;
+    color: white;
+    
+}
+.user .signin{
+    transition:color .5s;
+    transition:background-color .5s;
+}
+.user .signin:hover{
+    background-color: white;
+    color: black;
+    
+}
+
+
+
+
+.main{
+    padding: 120px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.box{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: #dddddd 0px 2px 6px 1px;
+    gap: 150px;
+}
+.container1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.img{
+    background-color: wheat;
+    height: 80px;
+    width: 80px;
+    border-radius: 9px;
+}
+.qty{
+    display: flex;   
+    gap: 15px;
+}
+.qty button:nth-of-type(1){
+    font-size:x-large;
+    padding: 8px 12px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: #dddddd 0px 4px 7px 1px;
+
+}
+.qty button:nth-of-type(2){
+    font-size:x-large;
+    padding: 8px 12px;
+    background-color: #ececec;
+    border: none;
+    border-radius: 5px;
+
+}
+.qty input:nth-last-of-type(1){
+    border: none;
+    width: 15px;
+    font-size: x-large;
+    outline: none;
+}
+.box .buy{
+    padding: 12px 30px;
+    background: none;
+    color: rgb(255, 115, 0);
+    font-weight: bolder;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 115, 0);
+    transition:color .5s;
+    transition:background-color .5s;
+}
+.buy:hover{
+    background-color: rgb(255, 115, 0);
+    color: white;
+    
+}
+h3{
+    letter-spacing: 1px;
+}
+.container1 p{
+    font-size: larger;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    color: rgb(255, 115, 0);
+}
+.checkbox{
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    margin-right: 10px;
+    outline: none;
+}
+.checkbox:hover{
+    cursor: pointer;
+}
+.bill{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.bill .section .details{
+    display: flex;
+    gap: 20px;
+    text-align: left;
+    line-height: 1.6;
+}
+.details div:nth-of-type(3){
+    color: rgb(255, 115, 0);
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.bill .section .details p{
+    color: rgb(255, 115, 0);
+    
+}
+
+.bill .section .details h3{
+    display: flex;
+
+}
+
+.pay{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.bill .pay button{
+    padding: 13px 28px;
+    font-size: larger;
+    border: 2px solid rgb(255, 115, 0);
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(255, 115, 0);
+    transition:color .5s;
+    transition:background-color .5s;
+}
+.bill .pay button:nth-of-type(1):hover{
+    background: none;
+    color: rgb(255, 115, 0);
+    border: 2px solid rgb(255, 115, 0);
+    
+}
+.bill .pay button:nth-of-type(2){
+    background:none;
+    color: rgb(255, 115, 0);
+    border: 2px solid rgb(255, 115, 0);
+    transition:color .5s;
+    transition:background-color .5s;
+}
+.bill .pay button:nth-of-type(2):hover{
+    background-color: rgb(255, 115, 0);
+    color: white;
+    
+}
+
+
+footer{
+    background-color: black;
+    padding: 50px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 100px;
+    line-height: 1.6;
+}
+.about span{
+    color: rgb(255, 115, 0);
+}
+.about{
+    color: #ffff;
+}
+.about h1{
+    width: 250px;
+    line-height: 3;
+}
+.about p{
+    width: 325px;
+    letter-spacing: 1px;
+    font-size: large;
+}
+.product h3, .company h3, .support h3, .s-media h3{
+    color: rgb(255, 115, 0);
+    font-size: x-large;
+    line-height: 3;
+}
+.product ul li a,.company ul li a, .support a, .s-media ul li a{
+    color: white;
+    font-size: large;
+    line-height: 2.2;
+    transition:color .5s;
+}
+
+.product ul li a:hover,.company ul li a:hover, .support a:hover, .s-media ul li a:hover{
+    color: rgb(255, 115, 0);
+    
+}
+.s-media ul{
+    display: flex;
+    gap: 10px;
+    font-size: x-large;
+}
+.copyright{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(31, 20, 0);
+    color: white;
+}
+.copyright a{
+    color: white;
+}
+.copyright a:hover{
+    text-decoration: underline;
+}

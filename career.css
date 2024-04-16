@@ -1,0 +1,208 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    cursor:pointer;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    position: fixed;
+    z-index: 1;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a{
+    color: white;
+    transition: color .5s;
+}
+nav ul li a:hover{
+    color: rgb(255, 115, 0);
+    
+}
+.logo{
+    font-size: x-large;
+    color: white;
+    letter-spacing:2px;
+    font-weight: 600;
+}
+.logo span{
+    color: rgb(255, 115, 0);
+}
+.user{
+    display: flex;
+    gap: 20px;
+}
+.user button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 17px;
+    border-radius: 20px;
+}
+.user .signup{
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    transition:color .5s;
+}
+.user .signup:hover{
+    border: 1px solid white;
+    background: none;
+    color: white;
+    
+}
+.user .signin{
+    transition:color .5s;
+    transition:background-color .5s;
+}
+.user .signin:hover{
+    background-color: white;
+    color: black;
+    
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+span{
+    color: #ff6b09;
+}
+.text h1{
+    font-size: 40px;
+}
+.text{
+    width: 575px;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.text button{
+	width: 165px;
+	padding: 12px;
+	font-size: large;
+	background-color: #ff6b09;
+	color: white;
+	border: 2px solid #ff6b09;
+	border-radius: 5px;
+    transition:color .5s;
+    transition:background-color .5s;
+}
+.text button:hover{
+    background-color: white;
+    color: #ff6b09;
+    
+}
+.picture{
+    width: 400px;
+    position: relative;
+    bottom: 80px;
+}
+.big{
+    height: 300px;
+    width: 450px;
+    border-radius: 20px;
+}
+.small{
+    height: 180px;
+    width: 250px;
+    border: 8px solid white;
+    border-radius: 20px 7px 20px 7px;
+    position: relative;
+    bottom: 80px;
+    left: 300px;
+}
+.box{
+    
+    border: 1px solid #ff6b09;
+    height: 270px;
+    width: 420px;
+    z-index: -1;
+    position: relative;
+    top: 350px;
+    left: 80px;
+    
+
+}
+footer{
+    background-color: black;
+    padding: 50px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 100px;
+    line-height: 1.6;
+}
+.about span{
+    color: rgb(255, 115, 0);
+}
+.about{
+    color: #ffff;
+}
+.about h1{
+    width: 250px;
+    line-height: 3;
+}
+.about p{
+    width: 325px;
+    letter-spacing: 1px;
+    font-size: large;
+}
+.product h3, .company h3, .support h3, .s-media h3{
+    color: rgb(255, 115, 0);
+    font-size: x-large;
+    line-height: 3;
+}
+.product ul li a,.company ul li a, .support a, .s-media ul li a{
+    color: white;
+    font-size: large;
+    line-height: 2.2;
+    transition:color .5s;
+}
+
+.product ul li a:hover,.company ul li a:hover, .support a:hover, .s-media ul li a:hover{
+    color: rgb(255, 115, 0);
+    
+}
+.s-media ul{
+    display: flex;
+    gap: 10px;
+    font-size: x-large;
+}
+.copyright{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(31, 20, 0);
+    color: white;
+}
+.copyright a{
+    color: white;
+}
+.copyright a:hover{
+    text-decoration: underline;
+    
+}
