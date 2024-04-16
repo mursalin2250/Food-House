@@ -1,0 +1,525 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+button{
+    cursor:pointer;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    position: fixed;
+    z-index: 2;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a{
+    color: white;
+    transition:color .5s;
+
+}
+nav ul li a:hover{
+    color: rgb(255, 115, 0);
+}
+.logo{
+    font-size: x-large;
+    color: white;
+    letter-spacing:2px;
+    font-weight: 600;
+}
+.logo span{
+    color: rgb(255, 115, 0);
+}
+.user{
+    display: flex;
+    gap: 20px;
+}
+.user button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 17px;
+    border-radius: 20px;
+}
+.user .signup{
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    border: 1px solid white;
+    transition:color .5s;
+    transition:background-color .5s;
+}
+.user .signup:hover{
+    
+    background: none;
+    color: white;
+
+}
+.user .signin{
+    transition:color .5s;
+    transition:background-color .5s;
+}
+.user .signin:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.main{
+    padding-top: 65px;
+}
+header{
+    height: 700px;
+    background-image: url(01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    padding: 0px 50px;
+}
+header h1{
+    font-family: "poppins", sans-serif;
+    color: white;
+    font-size: 60px;
+}
+header .btn{
+    display: flex;
+    gap: 20px;
+}
+header .btn button{
+    padding: 13px;
+    width: 140px;
+    border-radius: 3px;
+    font-size: large;
+    font-weight: bold;
+}
+.btn .btn1{
+    background-color: rgb(255, 115, 0);
+    color: white;
+    border: 2px solid rgb(255, 115, 0);
+    transition:color .5s;
+    transition:background-color .5s;
+    
+}
+.btn .btn1:hover{
+    background:transparent;
+    color: rgb(255, 115, 0);
+    border: 2px solid rgb(255, 115, 0);
+
+}
+.btn .btn2{
+    background-color: white;
+    color: rgb(255, 115, 0);
+    border: 2px solid white;
+    transition:color .5s;
+    transition:background-color .5s;
+}
+.btn .btn2:hover{
+    background:none;
+    color: white;
+
+
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 30px;
+}
+.info .pictures{
+    display: flex;
+    position: relative;
+    left: 50px;
+}
+.info .pictures img:nth-of-type(1){
+    width: 400px;
+}
+.info .pictures img:nth-of-type(2){
+    height: 130px;
+    width: 200px;
+}
+.info .pictures img:nth-of-type(3){
+    height: 200px;
+    width: 300px;
+    border: 8px solid white;
+    border-radius: 10px;
+    position: relative;
+    right: 320px;
+    top: 250px;
+
+}
+.authenticity{
+    width: 465px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    right: 150px;
+    
+}
+.info .btn3{
+    padding: 13px;
+    width: 160px;
+    border-radius: 3px;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgb(255, 115, 0);
+    color: white;
+    border: 2px solid rgb(255, 115, 0);
+    transition:color .5s;
+    transition:background-color .5s;
+}
+.info .btn3:hover{
+    background: transparent;
+    color: rgb(255, 115, 0);
+
+}
+.info h1{
+    font-size: 28px;
+}
+.info h1 span{
+    color: rgb(255, 115, 0);
+}
+.food{
+    padding: 30px;
+}
+.category{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.pizza,.burger,.shawarma,.chowmein,.ramen,.pasta,.drinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: larger;
+    padding: 8px;
+    transition:box-shadow .5s;
+    border-radius: 20px;
+
+}
+.pizza:hover,.burger:hover,.shawarma:hover,.chowmein:hover,.ramen:hover,.pasta:hover,.drinks:hover{
+    box-shadow: #dddddd 0px 4px 9px 1px;
+
+}
+.categories img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+
+.items{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 25px;
+    margin-bottom: 80px;
+}
+#category{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;   
+}
+.item-heading,#category-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.box{
+    height: 350px;
+    width: 370px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: baseline;
+    background-color: rgb(243, 243, 243);
+    line-height: 1.4;
+    gap: 1px;
+    box-shadow: rgb(170, 170, 170) 0px 0px 1px 1px ;
+    border-radius: 10px;
+
+}
+.text{
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    
+}
+.items img{
+    background-color: rgb(206, 206, 206);
+    height: 200px;
+    width: 340px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.fav{
+    border: none;
+    background: none;
+    font-size: x-large;
+}
+
+.cart{
+    background-color: rgb(255, 115, 0);
+    border: none;
+    color: white;
+    font-size: larger;
+    padding: 12px 30px;
+    border-radius: 6px;
+    transition:color .5s;
+
+}
+.cart:hover{
+    background-color: rgb(230, 103, 0);
+
+}
+.buy{
+    background-color: white;
+    color: rgb(255, 115, 0);
+    border: none;
+    border: 2px solid rgb(255, 115, 0);
+    font-size: larger;
+    padding: 10px 30px;
+    border-radius: 6px;
+    margin-top: 9px;
+    transition:color .5s;
+    transition:background-color .5s;
+}
+.buy:hover{
+    background-color: rgb(255, 115, 0);
+    color: white;
+
+}
+.fa-heart{
+    color: rgb(202, 202, 202);
+}
+.cities{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-image: url("https://user-images.githubusercontent.com/2388823/107261098-bf287080-69f3-11eb-829c-d8884e26b758.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+}
+.cities h1{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+.cities .locations{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+.place{
+    width: 360px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    background-color: rgb(243, 243, 243);
+    line-height: 1.4;
+    gap: 20px;
+    box-shadow: rgb(170, 170, 170) 0px 0px 1px 1px ;
+    border-radius: 10px;
+}
+.place-name{
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.place-name h3{
+    font-size: 25px;
+    padding-left: 5px;
+}
+.round{
+    height: 55px;
+    width: 55px;
+    border: 1px solid rgb(255, 115, 0);
+    color: rgb(255, 115, 0);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    font-size: xx-large;
+    transition:color .5s;
+    transition:background-color .5s;
+}
+.round:hover{
+    background-color: rgb(255, 115, 0);
+    color: white;
+    cursor: pointer;
+
+}
+.img{
+    height: 200px;
+    width: 340px;
+    border-radius: 10px;
+}
+#review{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+.card{
+    width: 500px;
+    padding: 20px;
+    background-color:rgb(46, 30, 0);
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+}
+.upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.circle{
+    height: 50px;
+    width: 50px;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client-name{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.all-category,.all-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+}
+.all-category a,.all-items a{
+    color: rgb(255, 115, 0);
+    text-decoration: underline;
+}
+
+footer{
+    background-color: black;
+    padding: 50px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 100px;
+    line-height: 1.6;
+    margin-top: 100px;
+}
+span{
+    color: rgb(255, 115, 0);
+}
+.about{
+    color: #ffff;
+}
+.about h1{
+    width: 250px;
+    line-height: 3;
+}
+.about p{
+    width: 325px;
+    letter-spacing: 1px;
+    font-size: large;
+}
+.product h3, .company h3, .support h3, .s-media h3{
+    color: rgb(255, 115, 0);
+    font-size: x-large;
+    line-height: 3;
+}
+.product ul li a,.company ul li a, .support a, .s-media ul li a{
+    color: white;
+    font-size: large;
+    line-height: 2.2;
+    transition:color .5s;
+}
+
+.product ul li a:hover,.company ul li a:hover, .support a:hover, .s-media ul li a:hover{
+    color: rgb(255, 115, 0);
+
+}
+.s-media ul{
+    display: flex;
+    gap: 10px;
+    font-size: x-large;
+}
+.copyright{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(31, 20, 0);
+    color: white;
+}
+.copyright a{
+    color: white;
+}
+.copyright a:hover{
+    text-decoration: underline;
+
+}
+.color{
+    color: red;
+}
