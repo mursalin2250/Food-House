@@ -84,7 +84,12 @@
 			window.location = "payment.html";
 		}
 		function paid(){
-			alert("Your order has been confirmed.");
+			if(document.querySelector("input").value != 0){
+				alert("Your order had been confirmed.");
+			}
+			else{
+				alert("Please enter your bkash number correctly")
+			}
 		}
 	</script>
 </body>
