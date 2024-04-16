@@ -1,0 +1,206 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    cursor:pointer;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    position: fixed;
+    z-index: 2;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a{
+    color: white;
+}
+nav ul li a:hover{
+    color: rgb(255, 115, 0);
+    transition: .5s;
+}
+.logo{
+    font-size: x-large;
+    color: white;
+    letter-spacing:2px;
+    font-weight: 600;
+}
+.logo span{
+    color: rgb(255, 115, 0);
+}
+.user{
+    display: flex;
+    gap: 20px;
+}
+.user button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 17px;
+    border-radius: 20px;
+}
+.user .signup{
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+.user .signup:hover{
+    border: 1px solid white;
+    background: none;
+    color: white;
+    transition: .5s;
+}
+.user .signin:hover{
+    background-color: white;
+    color: black;
+    transition: .5s;
+}
+
+
+.main{
+    padding-top: 80px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 80px 80px 80px;
+}
+.details img{
+    width: 550px;
+}
+.full{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.text h1{
+    font-size: 35px;
+    line-height: 1.6;
+}
+
+.cart{
+    background-color: rgb(255, 115, 0);
+    border: 2px solid rgb(255, 115, 0);
+    color: white;
+    font-size: larger;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: background-color .5s;
+}
+.cart:hover{
+    background: transparent;
+    color: rgb(255, 115, 0);
+}
+.buy{
+    color: rgb(255, 115, 0);
+    background-color: white;
+    border: none;
+    border: 2px solid rgb(255, 115, 0);
+    font-size: larger;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-top: 9px;
+    transition: background-color 1s cubic-bezier(.19,.73,1,.84);
+    margin-left: 20px;
+}
+.buy:hover{
+    background-color: rgb(255, 115, 0);
+    color: white;
+    transition: .5s;
+}
+.back{
+    margin: 50px 0px 0px 80px;
+    padding: 13px 25px;
+    font-size: larger;
+    border: 2px solid rgb(255, 115, 0);
+    color: rgb(255, 115, 0);
+    background-color: white;
+    border-radius: 30px;
+    transition: color .5s;
+    transition: background-color .5s;
+    
+}
+.back:hover{
+    background-color: rgb(255, 115, 0);
+    color: white;
+}
+
+
+footer{
+    background-color: black;
+    padding: 50px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 100px;
+    line-height: 1.6;
+}
+.about span{
+    color: rgb(255, 115, 0);
+}
+.about{
+    color: #ffff;
+}
+.about h1{
+    width: 250px;
+    line-height: 3;
+}
+.about p{
+    width: 325px;
+    letter-spacing: 1px;
+    font-size: large;
+}
+.product h3, .company h3, .support h3, .s-media h3{
+    color: rgb(255, 115, 0);
+    font-size: x-large;
+    line-height: 3;
+}
+.product ul li a,.company ul li a, .support a, .s-media ul li a{
+    color: white;
+    font-size: large;
+    line-height: 2.2;
+}
+
+.product ul li a:hover,.company ul li a:hover, .support a:hover, .s-media ul li a:hover{
+    color: rgb(255, 115, 0);
+    transition: .5s;
+}
+.s-media ul{
+    display: flex;
+    gap: 10px;
+    font-size: x-large;
+}
+.copyright{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(31, 20, 0);
+    color: white;
+}
+.copyright a{
+    color: white;
+}
+.copyright a:hover{
+    text-decoration: underline;
+    transition: .5s;
+}
