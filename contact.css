@@ -140,6 +140,9 @@ input{
     color: rgb(255, 115, 0);
 
 }
+textarea{
+    resize:none;
+}
 
 footer{
     background-color: black;
