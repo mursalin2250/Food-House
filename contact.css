@@ -111,6 +111,8 @@ input{
 #text{
     background-color: #f0f0f0;
     border: none;
+    outline: none;
+    resize: none;
     padding: 20px;
     border-radius: 5px; 
 }
@@ -139,9 +141,6 @@ input{
     border: 2px solid rgb(255, 115, 0);
     color: rgb(255, 115, 0);
 
-}
-textarea{
-    resize:none;
 }
 
 footer{
